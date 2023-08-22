@@ -4,7 +4,7 @@ import math
 
 #Simple Math functions
 
-""" print(2 + 3)             # addition(+)
+print(2 + 3)             # addition(+)
 print(3 - 1)             # subtraction(-)
 print(2 * 3)             # multiplication(*)
 print(3 / 2)             # division(/)
@@ -20,12 +20,12 @@ print(type('Asabeneh'))  # String
 print(type([1, 2, 3]))   # List
 print(type({'name':'Asabeneh'})) # Dictionary
 print(type({9.8, 3.14, 2.7}))    # Set
-print(type((9.8, 3.14, 2.7)))    # Tuple """
+print(type((9.8, 3.14, 2.7)))    # Tuple
 
 
 #---------------------------------------------
 
-""" print (2+3)
+print (2+3)
 print('Loïc')
 print(type(2+3))
 print(type('Loïc'))
@@ -36,7 +36,7 @@ print(type([1,2,3]))
 Pistache = True
 
 print(Pistache)
- """
+
 
 
 #--------------------------------------------
