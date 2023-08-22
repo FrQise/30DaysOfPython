@@ -158,14 +158,14 @@ print("Name\tAge\tCountry\tCity\nAsabeneh\t250\tFinland\tHelsinki")
 #   radius = 10
 #   area = 3.14 * radius ** 2
 #   The area of a circle with radius 10 is 314 meters square.
-print("Radius = 10\narea = 3.4 * radius **2\nThe Area of a circle with radius 10 is 314 meters square")
+print("Radius = 10\narea = 3.4 * radius ** 2\nThe Area of a circle with radius 10 is 314 meters square")
 
 radius = "10"
 area = "3.14 * radius ** 2"
-area_result = 3.14 * 10 ** 2
+area_result = 3.14 * int(radius) ** 2
 
 print("Radius = {}\narea = {}\nThe Area of a circle with radius {} is {} meters square".format(radius, area, radius, area_result))
-print("Radius = 10\narea = 3.4 * radius **2\nThe Area of a circle with radius 10 is 314 meters square")
+print("Radius = 10\narea = 3.4 * 10 ** 2\nThe Area of a circle with radius 10 is 314 meters square")
 
 #36 Make the following using string formatting methods:
 #   8 + 6 = 14
