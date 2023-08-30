@@ -129,15 +129,28 @@ if "skills" in person:
     print(person["skills"][len(person['skills'])//2])
     if "Python" in person["skills"]:
        print("Python" in person["skills"])
+
 print("------------------------------------------")
+
 if "JavaScript" or "React" in person["skills"]:
           print("He is a front end developer")
-          if "Node" or "Python" or "MongoDB":
-             print("He is a back end developer")
-             if "React" or "Node" or "MongoDB":
-                print("He is a fullstack developer")
-             else: 
-                print("Unknown title")
+          if "React" or "Node" or "MongoDB":
+              print("He is a fullstack developer")
+if "Node" or "Python" or "MongoDB":
+    print("He is a back end developer")
+else: 
+    print("Unknown title")
+
 print("------------------------------------------")
+
 if "Finland" in person["country"] and person["is_married"] == True:
-     print(person["first_name"], person["last_name"], "lives in", person["country"],". He is married.")
+    print(person["first_name"], person["last_name"], "lives in", person["country"],". He is married.")
+
+
+taille_zgueg={ 
+    "petit" : 5,
+    "grand" : 10,
+    }
+
+
+
