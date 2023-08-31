@@ -23,7 +23,7 @@ student = {
     "Gender":"Male",
     "Age":"77",
     "Marital status":"Widower",
-    "Skills":"Conquest",
+    "Skills":["Conquest"],
     "Country":"Macedon",
     "City":"Aigai"
 }
@@ -39,7 +39,7 @@ print(type(student["Skills"]))
 
 #6 Modify the skills values by adding one or two skills
 
-student["Skills"] = "Conquest", "Swordmanship", "Horse riding"
+student["Skills"] = ["Conquest", "Swordmanship", "Horse riding"]
 print(student["Skills"])
 
 #7 Get the dictionary keys as a list
