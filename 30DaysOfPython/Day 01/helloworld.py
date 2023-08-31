@@ -38,7 +38,6 @@ Pistache = True
 print(Pistache)
 
 
-
 #--------------------------------------------
 
 #Find Euclidian Distance between (2,3) & (10,8)
@@ -72,4 +71,3 @@ result = round(result)
 print("Round the result :" , result)
 
 print("Result is :" , result)
-
