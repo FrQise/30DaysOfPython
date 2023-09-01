@@ -133,11 +133,12 @@ if "skills" in person:
 
 print("------------------------------------------")
 
-if "JavaScript" or "React" in person["skills"]:
-    print("He is a front end developer")
-    if "React" or "Node" or "MongoDB":
+if "Javascript" or "React" in person["skills"]:
+    if "Node" or "Python" or "MongoDB" in person["skills"]:
         print("He is a fullstack developer")
-if "Node" or "Python" or "MongoDB":
+    else:
+        print("He is a front end developer")
+elif "Node" or "Python" or "MongoDB" in person["skills"]:
     print("He is a back end developer")
 else:
     print("Unknown title")
