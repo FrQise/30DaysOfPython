@@ -1,5 +1,5 @@
 # 30 Days of Python
-# Day 08
+# Day 10
 
 # LEVEL 1
 
