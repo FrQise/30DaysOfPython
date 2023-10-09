@@ -6,9 +6,7 @@
 # 1 Declare a function add_two_numbers. It takes two parameters and it returns a sum.
 
 def add_two_numbers(first_number, second_number):
-    sum_two_numbers = first_number + second_number
-    return sum_two_numbers
-
+    return first_number + second_number
 
 print("The sum of 50 + 50 is :")
 print(add_two_numbers(50, 50))
@@ -17,13 +15,13 @@ print("------------------------------------------")
 # 2 Area of a circle is calculated as follows: area = π x r x r. Write a function that calculates area_of_circle.
 
 
-def area_of_circle(first_r, second_r):
+def area_of_circle(rayon):
     pi = float(3.14)
-    calc_area = pi * first_r * second_r
+    calc_area = pi * (rayon ** 2)
     return calc_area
 
 
-print(area_of_circle(5, 5))
+print(area_of_circle(5))
 
 print("------------------------------------------")
 # 3 Write a function called add_all_nums which takes arbitrary number of arguments and sums all the arguments.
@@ -44,10 +42,7 @@ print("------------------------------------------")
 
 
 def convert_celsius_to_fahrenheit(celcius):
-    calc_convertion_1 = celcius * 9/5
-    convertion_total = calc_convertion_1 + 32
-    return convertion_total
-
+    return (celcius * 9/5) + 32
 
 print(convert_celsius_to_fahrenheit(10))
 
@@ -295,10 +290,7 @@ print("------------------------------------------")
 
 def calculate_range(range_list):
     sorted_list = sorted(range_list)
-    h = sorted_list[-1]
-    l = sorted_list[0]
-    result = h - l
-    return result
+    return sorted_list[-1] - sorted_list[0]
 
 
 find_range = [5, 10, 33, 2, 4, 8, 55, 49, 85, 64]
