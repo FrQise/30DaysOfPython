@@ -271,4 +271,132 @@ print("------------------------------------------")
 
 
 def calculate_mode(mode_list):
-    count_list = []
+    mode_dct = {}
+    for items in mode_list:
+        if items in mode_dct:
+            mode_dct[items] += 1
+        else:
+            mode_dct[items] = 1
+    max_mode = max(mode_dct.values())
+    modes = [items for items, count in mode_dct.items() if count == max_mode]
+
+    if len(modes) == 1:
+        return modes[0]
+    else:
+        return modes
+
+
+find_mode = [5, 5, 5, 5, 10, 25, 64, 25, 5,
+             74, 75, 74, 10, 10, 10, 10, 25, 64, 5]
+print(calculate_mode(find_mode))
+
+print("------------------------------------------")
+
+
+def calculate_range(range_list):
+    sorted_list = sorted(range_list)
+    h = sorted_list[-1]
+    l = sorted_list[0]
+    result = h - l
+    return result
+
+
+find_range = [5, 10, 33, 2, 4, 8, 55, 49, 85, 64]
+print(calculate_range(find_range))
+
+print("------------------------------------------")
+
+
+def calculate_variance(variance_list):
+    mean = calculate_mean(variance_list)
+    result = sum((items - mean) ** 2 for items in variance_list) / \
+        len(variance_list)
+    return result
+
+
+find_variance = [5, 10, 33, 2, 4, 8, 55, 49, 85, 64]
+print(calculate_variance(find_variance))
+
+print("------------------------------------------")
+
+
+def calculate_std(std_list):
+    variance = calculate_variance(std_list)
+    result = variance ** 0.5
+    return result
+
+
+find_std = [5, 10, 33, 2, 4, 8, 55, 49, 85, 64]
+print(calculate_std(find_std))
+
+print("------------------------------------------")
+
+# LEVEL 3
+# Write a function called is_prime, which checks if a number is prime.
+
+
+def is_prime(number):
+    if number > 1:
+        for i in range(2, number):
+            if (number % i) == 0:
+                return f"{number}, is not a prime number"
+        else:
+            return f"{number}, is a prime number"
+    else:
+        return f"{number}, is not a prime number"
+
+
+print(is_prime(7))
+
+print("------------------------------------------")
+
+# Write a functions which checks if all items are unique in the list.
+
+
+def is_unique(unique_list):
+    for items in unique_list:
+        if unique_list.count(items) > 1:
+            return "There are multiples occurence of the same item in the list"
+        else:
+            return "This list contains only one occurence of each items"
+
+
+list_to_check = [1, 2, 4, 5, 7, 8, 9]
+print(is_unique(list_to_check))
+
+
+print("------------------------------------------")
+
+# Write a function which checks if all the items of the list are of the same data type.
+
+
+def is_same_data(data_list):
+    if len(set(type(item) for item in data_list)) > 1:
+        return "There are multiples data types in the list"
+    else:
+        return "This list contains only one data type"
+
+data_type_list = ["test", 1, 2, 3, "retest"]
+print(is_same_data(data_type_list))
+
+
+print("------------------------------------------")
+
+# Write a function which check if provided variable is a valid python variable
+
+def is_valid(var_name):
+    keyword_list = ["False","await","else","import","pass","None","break","except","in","raise","True","class","finally","is","return","and","continue","for","lambda","try","as","def","from","nonlocal","while","assert","del","global","not","with","async","elif","if","or","yield"]
+    if not (var_name[0].isalpha() or var_name[0] == "_"):
+        return f"{var_name} is not a valid variable name"
+    for characters in var_name[1:]:
+        if not (characters.isalnum() or characters == "_"):
+            return f"{var_name} is not a valid variable name"
+    if var_name in keyword_list:
+        return f"{var_name} is not a valid variable name"
+    
+    return f"{var_name} is a valid variable name"
+
+test_if_ok = "test_if_ok"
+print(is_valid(test_if_ok))
+
+print("------------------------------------------")
