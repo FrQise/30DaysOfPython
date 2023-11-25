@@ -1,6 +1,6 @@
 import random
 # 30 Days of Python
-# Day 11
+# Day 12
 
 # LEVEL 1
 
