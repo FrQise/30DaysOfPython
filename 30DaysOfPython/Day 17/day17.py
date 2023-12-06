@@ -5,10 +5,10 @@
 
 names = ['Finland', 'Sweden', 'Norway','Denmark','Iceland', 'Estonia','Russia']
 
-fin, swe, nor, den, ice, *rest = names[:5]
+fin, swe, nor, den, ice , *rest = names
 nordic_countries = ', '.join([fin, swe, nor, den, ice])
 
-es, ru, *remaining_countries = names[5:]
+es, ru = rest
 
 print(nordic_countries)
 print(es)

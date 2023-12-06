@@ -7,6 +7,7 @@ import csv
 
 #LEVEL 1
 #1 Write a function which count number of lines and number of words in a text
+print("#1")
 def count_lines_words(file="30DaysOfPython\Day 19\Fondation.txt"):
     with open(file) as file:
         content = file.read()
@@ -96,8 +97,8 @@ print(find_most_common_words("30DaysOfPython\Day 19\The_Shining.txt",True,3))
 print("------------------------------------------")
 
 #3 Write a python application that checks similarity between two texts. It takes two files or two strings as a parameter and it will evaluate the similarity of the two texts.
-
-""" def check_type(txt1, isfile1, txt2, isfile2):
+""" 
+def check_type(txt1, isfile1, txt2, isfile2):
     if isfile1 and isfile2:
         words1 = read_text(txt1)
         words2 = read_text(txt2)
@@ -110,7 +111,7 @@ print("------------------------------------------")
         words2 = txt2
     return words1, words2
 
-print(check_type(first_text,True,second_text,True)) """
+print(check_type(first_text,True,second_text,True))"""
 
 def read_text(file_path):
     with open(file_path, "r", encoding="utf-8") as file:

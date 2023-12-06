@@ -8,7 +8,6 @@ import re
 paragraph = "I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love."
 
 words = re.findall(r'\w+\b',paragraph)
-
 word_counts = {}
 for i in set(words):
     word_counts[i] = words.count(i)
@@ -33,7 +32,6 @@ print("------------------------------------------")
 #LEVEL 2
 #1 Write a pattern which identifies if a string is a valid python variable
 
-
 keyword_list = ["False","await","else","import","pass","None","break","except","in","raise","True","class","finally","is","return","and","continue","for","lambda","try","as","def","from","nonlocal","while","assert","del","global","not","with","async","elif","if","or","yield"]
 banned_format = r'^[a-zA-Z][a-zA-Z0-9_]*$'
 
@@ -42,7 +40,7 @@ def is_valid(var_name):
         return f"{var_name} is not a valid variable name (reserved keyword)"
     
     if not re.match(banned_format, var_name):
-            return f"{var_name} is not a valid variable name"
+        return f"{var_name} is not a valid variable name"
     
     return f"{var_name} is a valid variable name"
 
