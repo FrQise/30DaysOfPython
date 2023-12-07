@@ -3,7 +3,7 @@ import re
 from collections import Counter
 import csv
 # 30 Days of Python
-# Day 18
+# Day 19
 
 #LEVEL 1
 #1 Write a function which count number of lines and number of words in a text
